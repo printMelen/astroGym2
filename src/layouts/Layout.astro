@@ -1,0 +1,27 @@
+---
+interface Props {
+	title: string;
+}
+import Header from '../components/Header.astro';
+import Header2 from '../components/Header2.astro';
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/logo.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>AstroGym</title>
+	</head>
+	<body class="bg-[#000814]">
+		<Header2/>
+		<main>
+			<slot/>
+		</main>
+	</body>
+</html>
+

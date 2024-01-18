@@ -1,0 +1,59 @@
+---
+import {StickyHeader, Astronav, MenuItems, MenuIcon} from "astro-navbar";
+import Enlace from "./Enlace.astro";
+---
+<StickyHeader
+class="sticky top-0 z-20 transition-all "
+scrollY={50}
+defaultClass="py-5 border-transparent text-white"
+activeClass="py-2 backdrop-blur-lg text-[#000814]">
+<header class="lg:flex p-5 px-16  gap-5">
+  <Astronav>
+    <div class="flex items-center w-full justify-between">
+      <Enlace href="#" class="flex items-center">
+        <img src="../../logo.svg" class="w-[30px]" alt="">
+        <span class="flex items-center text-2xl font-semibold whitespace-nowrap">AstroGym</span>
+      </Enlace>
+      <!-- <a href="#"  hover:text-purpura">
+        <span class="flex items-center text-2xl font-semibold text-white whitespace-nowrap bg-gradient-to-r from-violet-700 to-white text-transparent
+        bg-clip-text">Astro</span>
+      </a> -->
+      <div class="flex lg:hidden">
+        <MenuIcon class="flex justify-center w-6 h-6 "/>
+      </div>
+    </div>
+    <MenuItems class="hidden lg:flex">
+      <ul class="flex flex-col lg:flex-row lg:gap-6 items-center text-white mt-5 lg:mt-0">
+        <li>
+            <a href="#"
+            class="transform transition duration-500 hover:scale-125 block py-2 px-3 hover:text-purpura rounded md:p-0 focus:text-purpura"
+            >
+                Inicio
+            </a>
+        </li>
+        <li>
+            <a href="#"
+            class="transform transition duration-500 hover:scale-125 block py-2 px-3 hover:text-purpura rounded md:p-0 focus:text-purpura"
+            >
+                Nosotros
+            </a>
+        </li>
+        <li>
+            <a href="#"
+            class="transform transition duration-500 hover:scale-125 block py-2 px-3 hover:text-purpura rounded md:p-0 focus:text-purpura"
+            >
+                Entrenadores
+            </a>
+        </li>
+        <li>
+            <a href="#"
+            class="transform transition duration-500 hover:scale-125 block py-2 px-3 hover:text-purpura rounded md:p-0 focus:text-purpura"
+            >
+                Contáctanos
+            </a>
+        </li>
+      </ul>
+    </MenuItems>
+  </Astronav>
+</header>
+</StickyHeader>
