@@ -4,7 +4,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://printMelen.github.io',
-  base: '/astroGym2',
+  // site: 'https://printMelen.github.io',
+  // base: '/astroGym2',
   integrations: [tailwind()]
 });
