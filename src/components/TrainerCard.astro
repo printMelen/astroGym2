@@ -1,9 +1,9 @@
 ---
-const { nombre, class: className = "" } = Astro.props;
+const { nombre,id, class: className = "" } = Astro.props;
 ---
 
 <!-- <div class:list={["flex flex-col", className]}> -->
-<a href="#entrenadores" class="transform transition duration-500 hover:scale-105">
+<a href={id} class="transform transition duration-500 hover:scale-105">
     <div
       class:list={[
         "grayscale bg-blend-normal bg-cover bg-center bg-no-repeat w-[300px] h-[500px]",
