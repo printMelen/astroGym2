@@ -1,12 +1,19 @@
 ---
-const{
-    nombre,
-    class: className = ""
-}=Astro.props
+const { nombre, class: className = "" } = Astro.props;
 ---
+
 <!-- <div class:list={["flex flex-col", className]}> -->
-    <div class:list={["grayscale bg-blend-normal bg-cover bg-center bg-no-repeat w-[300px] h-[500px]",className]}>
-    <div class="relative flex items-center justify-center top-[400px] h-[100px] text-white backdrop-blur-lg text-center">
+<a href="#entrenadores" class="transform transition duration-500 hover:scale-105">
+    <div
+      class:list={[
+        "grayscale bg-blend-normal bg-cover bg-center bg-no-repeat w-[300px] h-[500px]",
+        className,
+      ]}
+    >
+      <div
+        class="relative flex items-center justify-center top-[400px] h-[100px] text-white backdrop-blur-lg text-center"
+      >
         <span class="text-xl">{nombre}</span>
+      </div>
     </div>
-</div>
+</a>
