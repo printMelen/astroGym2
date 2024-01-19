@@ -1,0 +1,18 @@
+---
+import Filas from "./Filas.astro";
+import TrainerCard from "./TrainerCard.astro";
+---
+
+<section class="flex flex-col items-center mt-20" id="entrenadores">
+    <h2 class="text-white text-3xl mb-5">Entrenadores:</h2>
+    <span class="text-white mb-5">
+        Nuestro equipo de profesionales del deporte
+    </span>
+    <Filas class="gap-5">
+        <!-- class="bg-entrenador1" -->
+        <TrainerCard class="bg-entrenador1" nombre="Manuel Pérez García"></TrainerCard>
+        <TrainerCard class="bg-entrenador2" nombre="Lisa Rodríguez Sánchez"></TrainerCard>
+        <TrainerCard class="bg-entrenador3" nombre="Yolanda Gómez Sastre"></TrainerCard>
+        <TrainerCard class="bg-entrenador4" nombre="Borja Redondo Hernández"></TrainerCard>
+    </Filas>
+</section>
