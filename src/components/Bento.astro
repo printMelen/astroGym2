@@ -3,10 +3,11 @@ import Card from "./Card.astro";
 import CardPeque from "./CardPeque.astro";
 ---
 
-<div class="flex flex-wrap w-[100%] justify-around p-10">
-    <CardPeque></CardPeque>
-    <CardPeque></CardPeque>
-    <CardPeque></CardPeque>
-    <CardPeque></CardPeque>
+    
+    <div class="flex flex-col flex-wrap w-[100%] justify-around p-10">
+        <CardPeque titulo="Inteligencia artificial" parrafo="Implementación de inteligencia artificial para la mejora de la técnica en los entrenamientos" img="/robot.svg"/>
+        <CardPeque titulo="Equipamiento novedoso" parrafo="Nuestras instalaciones se componen de las mejores máquinas" img="/pesa.svg"/>
+    </div>
+    <!-- <CardPeque titulo="Equipamiento novedoso" parrafo="Nuestras instalaciones se componen de las mejores máquinas" img="/pesa.svg"/> -->
+    
     <!-- <Card></Card> -->
-</div>

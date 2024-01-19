@@ -1,5 +1,6 @@
 ---
 import Bento from "./Bento.astro";
+import CardPeque from "./CardPeque.astro";
 ---
 
 <section class="flex flex-col items-center mt-20" id="nosotros">
@@ -7,5 +8,12 @@ import Bento from "./Bento.astro";
     <span class="text-white">
         Gimnasios de barrio con precios comerciales
     </span>
-    <Bento></Bento>
+    <div class="flex flex-wrap w-[100%] justify-around p-10">
+        <CardPeque titulo="Inteligencia artificial" parrafo="Implementación de inteligencia artificial para la mejora de la técnica en los entrenamientos" img="/robot.svg"/>
+        <CardPeque titulo="Equipamiento novedoso" parrafo="Nuestras instalaciones se componen de las mejores máquinas" img="/pesa.svg"/>
+    </div>
+    <div class="flex flex-wrap w-[100%] justify-around p-10">
+        <CardPeque titulo="Profesionales del deporte" parrafo="Nuestro equipo esta conformado por entrenadores que te guíaran en los ejercicios" img="/person.svg"/>
+        <CardPeque titulo="Equipamiento novedoso" parrafo="Nuestras instalaciones se componen de las mejores máquinas" img="/dinero.svg" style="img{height:10px}"/>
+    </div>
 </section>
