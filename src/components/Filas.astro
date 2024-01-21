@@ -1,0 +1,9 @@
+---
+const{
+    class: className = ""
+}=Astro.props
+---
+
+<div class:list={["flex flex-wrap w-full justify-around px-10",className]}>
+    <slot />
+</div>
